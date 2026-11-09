@@ -10,8 +10,18 @@ header {
     flex-direction: column;
 }
 
-.info-pessoal {
+.info-pessoal,
+.perfil {
     display: flex;
     align-items: center;
     flex-direction: column;
+}   
+
+.generos {
+    display: flex;
+    align-items: row;
+    gap: 10px;
+    padding: 5px;
 }
+
+
