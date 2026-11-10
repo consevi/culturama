@@ -10,22 +10,30 @@ header {
     flex-direction: column;
 }
 
+.profile {
+    padding: 10px;
+}
+
 .info-pessoal,
-.perfil {
+.perfil,
+.cidade,
+.habitos {
     display: flex;
     align-items: center;
     flex-direction: column;
 }   
 
-.generos,
-.cidade,
 .estado-civil,
-.estados {
+.generos,
+.estados,
+.redes-sociais {
     display: flex;
     align-items: row;
     gap: 10px;
     padding: 2px;
 }
+
+
 
 
 

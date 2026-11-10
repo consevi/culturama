@@ -14,24 +14,24 @@
     <section>
         <form action="" method="get">
 
-            <fieldset>
+            <fieldset class="profile">
                 <legend>Dados Pessoais</legend>
                     <div class="info-pessoal">
 
-            <label for="userName">Nome</label>
-            <input type="text" name="userName" required>
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="userName" required>
         <br>
-            <label for="userAge">Idade</label>
-            <input type="number" name="userAge" min="12" max="100" required>
+            <label for="age">Idade</label>
+            <input id="age" type="number" name="userAge" min="12" max="100" required>
         <br>
-            <label for="birthDate">Data de nascimeto</label>
-            <input type="date" name="birthDate">
+            <label for="birthdate">Data de nascimeto</label>
+            <input id="birthdate" type="date" name="birthDate">
         <br>
             <label for="email">Email</label>
-            <input type="email" name="email" required>
+            <input id="email" type="email" name="email" required>
         <br>
-            <label for="userPhoneNumber">Telefone</label>
-            <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número">
+            <label for="phonenumber">Telefone</label>
+            <input id="phonenumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número">
         <br>
             <label for="userImage">Upload</label>
             <input type="image" name="userImage">
@@ -42,20 +42,20 @@
                 </fieldset>  
 
                 
-                <fieldset>
+                <fieldset class="profile">
                     <legend>Perfil</legend>
                         <div class="perfil">
 
                             <p>Gênero:</p>
                             <div class="generos">   
-                            <input type="radio" name="userGender" value="Masculino">
-                            <label for="userGender">Masculino</label>
+                            <input id="male" type="radio" name="userGender" value="Masculino">
+                            <label for="male">Masculino</label>
 
-                            <input type="radio" name="userGender" value="Feminino">
-                            <label for="userGender">Feminino</label>
+                            <input id="female" type="radio" name="userGender" value="Feminino">
+                            <label for="female">Feminino</label>
 
-                            <input type="radio" name="userGender" value="Outro">
-                            <label for="userGender">Outro</label>
+                            <input id="other" type="radio" name="userGender" value="Outro">
+                            <label for="other">Outro</label>
                         </div>
         <br>                   
 
@@ -104,35 +104,46 @@
                                 </select>
                         </div>      
         <br>                   
-                        <div class="cidades">
-                            <label for="userCity">Cidade:</label>
-                            <input type="text" name="userCity" required>
+                        <div class="cidade">
+                            <label for="city">Cidade:</label>
+                            <input id="city" type="text" name="userCity" required>
                         </div>
                         
                     </div>
                 </fieldset> 
                 
-                <fieldset>
+                <fieldset class="profile">
                     <legend>Hábitos</legend>    
                     
-                    <p>Redes Sociais:</p>
-                    <input type="checkbox" name="social" value="instagram">
-                    <label for="social">Instagram</label>
+                    <div class="habitos">
+                        <p>Redes Sociais:</p>
 
-                    <input type="checkbox" name="social" value="facebook">
-                    <label for="social">Facebook</label>
-
-                    <input type="checkbox" name="social" value="likedin">
-                    <label for="social">Likedin</label>
-
-                    <input type="checkbox" name="social" value="discord">
-                    <label for="social">Discord</label>
-
-                    <input type="checkbox" name="social" value="x">
-                    <label for="social">X</label>
-
+                        <div class="redes-sociais">
+                            <input id="instagram" type="checkbox" name="social" value="instagram">
+                            <label for="instagram">Instagram</label>
+                        </div>
+                            
+                        <div class="redes-sociais">
+                            <input id="facebook" type="checkbox" name="social" value="facebook">
+                            <label for="facebook">Facebook</label>
+                        </div>
+                           
+                        <div class="redes-sociais">
+                            <input id="likedin" type="checkbox" name="social" value="likedin">
+                            <label for="likedin">Likedin</label>
+                        </div>
+                            
+                        <div class="redes-sociais">
+                            <input id="x" type="checkbox" name="social" value="x">
+                            <label for="x">X</label>
+                        </div>
+                            
+                    </div>
+                    
                 </fieldset>
+
             </form>
+
         </section>
         
 </body>
