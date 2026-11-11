@@ -31,7 +31,8 @@ header {
 .perfil,
 .cidade,
 .habitos,
-.opiniao {
+.opiniao,
+.cofirmacoes {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -42,7 +43,9 @@ header {
 .estados,
 .redes-sociais,
 .estilo-musical,
-.opiniao-intero {
+.opiniao-intero,
+.opnion-text,
+.confirmacoes-interno {
     display: flex;
     align-items: row;
     gap: 10px;

@@ -319,16 +319,44 @@
 
 
 
-                    <div>
+                    <div class="opnion-text">
                         <label for="opinionText">Escreva sua opinião:</label>
-                        
-                        <input 
-                            type="text" 
-                            name="userOpinionText">
+                        <textarea  
+                            id="opinionText" 
+                            name="userOpinonText" 
+                            placeholder="Digite aqui...">
+                        </textarea>
+                            
                     </div>
                         
                 </div>
               
+            </fieldset>
+
+            <fieldset class="profile">
+                <legend>
+                    Confirmações
+                </legend>
+                <div class="confirmacoes">
+
+                    <div class="confirmacoes-interno">
+                        <input 
+                            id="aceptParticipation"
+                            type="checkbox"  
+                            name="userAceptParticipation">
+                        <label for="aceptParticipation">Aceito participar da pesquisa</label>
+                    </div>
+                        
+                    <div class="confirmacoes-interno">
+                        <input 
+                            id="resulForEmail"
+                            type="checkbox"  
+                            name="userResulForEmail">
+                        <label for="resulForEmail">Receber resultado por email</label>
+                    </div>
+                        
+                </div>
+                        
 
             </fieldset>
 
