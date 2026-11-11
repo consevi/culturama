@@ -30,7 +30,8 @@ header {
 .info-pessoal,
 .perfil,
 .cidade,
-.habitos {
+.habitos,
+.opiniao {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -40,7 +41,8 @@ header {
 .generos,
 .estados,
 .redes-sociais,
-.estilo-musical {
+.estilo-musical,
+.opiniao-intero {
     display: flex;
     align-items: row;
     gap: 10px;
