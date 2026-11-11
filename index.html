@@ -1,150 +1,285 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cultu Rama</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
         <h1>Pesquisa Online</h1>
     </header>
 
     <section>
-        <form action="" method="get">
+
+        <form action="" method="get" enctype="multipart/form-data">
 
             <fieldset class="profile">
+
                 <legend>Dados Pessoais</legend>
-                    <div class="info-pessoal">
 
-            <label for="name">Nome</label>
-            <input id="name" type="text" name="userName" required>
-        <br>
-            <label for="age">Idade</label>
-            <input id="age" type="number" name="userAge" min="12" max="100" required>
-        <br>
-            <label for="birthdate">Data de nascimeto</label>
-            <input id="birthdate" type="date" name="birthDate">
-        <br>
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required>
-        <br>
-            <label for="phonenumber">Telefone</label>
-            <input id="phonenumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número">
-        <br>
-            <label for="userImage">Upload</label>
-            <input type="image" name="userImage">
-        <br>     
-            <button type="submit">Enviar</button>
-            
-                    </div>      
-                </fieldset>  
+                <div class="info-pessoal">
 
-                
-                <fieldset class="profile">
-                    <legend>Perfil</legend>
-                        <div class="perfil">
+                    <label for="name">Nome:</label>
+                    <input
+                        id="name"
+                        type="text"
+                        name="userName"
+                        required>
 
-                            <p>Gênero:</p>
-                            <div class="generos">   
-                            <input id="male" type="radio" name="userGender" value="Masculino">
-                            <label for="male">Masculino</label>
+                    <label for="age">Idade:</label>
+                    <input
+                        id="age"
+                        type="number"
+                        name="userAge"
+                        min="12"
+                        max="100"
+                        required>
 
-                            <input id="female" type="radio" name="userGender" value="Feminino">
-                            <label for="female">Feminino</label>
+                    <label for="birthdate">Data de nascimento:</label>
+                    <input
+                        id="birthdate"
+                        type="date"
+                        name="birthDate">
 
-                            <input id="other" type="radio" name="userGender" value="Outro">
-                            <label for="other">Outro</label>
-                        </div>
-        <br>                   
+                    <label for="email">E-mail:</label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        required>
 
-                        <div class="estado-civil">
-                            <label for="maritalStatus">Estao Civil:</label>
-                                <select name="maritalStatus">                                 
-                                        <option value="notInformed">Selecione...</option>
-                                        <option value="Casado">Casado</option>
-                                        <option value="Solteiro">Solteiro</option>
-                                        <option value="Divorciado">Divorciado</option>
-                                        <option value="União-estável">União estável</option>    
-                                </select>
-                        </div>
-        <br>                  
-            
-                        <div class="estados">
-                            <label for="userStates">Estados:</label>
-                                <select name="userStates" required> 
-                                    <option value="AC">Acre</option>
-                                    <option value="AL">Alagoas</option>
-                                    <option value="AP">Amapá</option>
-                                    <option value="AM">Amazonas</option>
-                                    <option value="BA">Bahia</option>
-                                    <option value="CE">Ceará</option>
-                                    <option value="DF">Distrito Federal</option>
-                                    <option value="ES">Espírito Santo</option>
-                                    <option value="GO">Goiás</option>
-                                    <option value="MA">Maranhão</option>
-                                    <option value="MT">Mato Grosso</option>
-                                    <option value="MS">Mato Grosso do Sul</option>
-                                    <option value="MG">Minas Gerais</option>
-                                    <option value="PA">Pará</option>
-                                    <option value="PB">Paraíba</option>
-                                    <option value="PR">Paraná</option>
-                                    <option value="PE">Pernambuco</option>
-                                    <option value="PI">Piauí</option>
-                                    <option value="RJ">Rio de Janeiro</option>
-                                    <option value="RN">Rio Grande do Norte</option>
-                                    <option value="RS">Rio Grande do Sul</option>
-                                    <option value="RO">Rondônia</option>
-                                    <option value="RR">Roraima</option>
-                                    <option value="SC">Santa Catarina</option>
-                                    <option value="SP">São Paulo</option>
-                                    <option value="SE">Sergipe</option>
-                                    <option value="TO">Tocantins</option>
-                                </select>
-                        </div>      
-        <br>                   
-                        <div class="cidade">
-                            <label for="city">Cidade:</label>
-                            <input id="city" type="text" name="userCity" required>
-                        </div>
-                        
+                    <label for="phonenumber">Telefone:</label>
+                    <input
+                        id="phonenumber"
+                        type="tel"
+                        name="userPhoneNumber"
+                        pattern="[0-9]{11}"
+                        placeholder="DDD + número">
+
+                    <label for="userImage">Upload:</label>
+                    <input
+                        id="userImage"
+                        type="file"
+                        name="userImage"
+                        accept="image/*">
+
+                </div>
+
+            </fieldset>
+
+
+            <fieldset class="profile">
+
+                <legend>Perfil</legend>
+
+                <div class="perfil">
+
+                    <p>Gênero:</p>
+
+                    <div class="generos">
+
+                        <input
+                            id="male"
+                            type="radio"
+                            name="userGender"
+                            value="Masculino">
+                        <label for="male">Masculino</label>
+
+                        <input
+                            id="female"
+                            type="radio"
+                            name="userGender"
+                            value="Feminino">
+                        <label for="female">Feminino</label>
+
+                        <input
+                            id="other"
+                            type="radio"
+                            name="userGender"
+                            value="Outro">
+
+                        <label for="other">Outro</label>
+
                     </div>
-                </fieldset> 
-                
-                <fieldset class="profile">
-                    <legend>Hábitos</legend>    
-                    
-                    <div class="habitos">
-                        <p>Redes Sociais:</p>
+
+                    <div class="estado-civil">
+
+                        <label for="maritalStatus">
+                            Estado civil:
+                        </label>
+
+                        <select
+                            id="maritalStatus"
+                            name="maritalStatus">
+
+                            <option value="notInformed">
+                                Selecione...
+                            </option>
+
+                            <option value="Casado">Casado</option>
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="União-estável">União estável</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="estados">
+
+                        <label for="userStates">Estado:</label>
+
+                        <select
+                            id="userStates"
+                            name="userStates"
+                            required>
+
+                            <option value="">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="cidade">
+                        <label for="city">Cidade:</label>
+
+                        <input
+                            id="city"
+                            type="text"
+                            name="userCity"
+                            required>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <fieldset class="profile">
+                    <legend>
+                        Hábitos     
+                    </legend>
+
+                <div class="habitos">
+
+                        <p>Redes sociais:</p>
 
                         <div class="redes-sociais">
-                            <input id="instagram" type="checkbox" name="social" value="instagram">
+                            <input
+                                id="instagram"
+                                type="checkbox"
+                                name="social"
+                                value="instagram">
                             <label for="instagram">Instagram</label>
                         </div>
-                            
+
+
                         <div class="redes-sociais">
-                            <input id="facebook" type="checkbox" name="social" value="facebook">
+                            <input
+                                id="facebook"
+                                type="checkbox"
+                                name="social"
+                                value="facebook">
                             <label for="facebook">Facebook</label>
                         </div>
-                           
+
+
                         <div class="redes-sociais">
-                            <input id="likedin" type="checkbox" name="social" value="likedin">
-                            <label for="likedin">Likedin</label>
+                            <input
+                                id="linkedin"
+                                type="checkbox"
+                                name="social"
+                                value="linkedin">
+                            <label for="linkedin">LinkedIn</label>
                         </div>
-                            
+
+
                         <div class="redes-sociais">
-                            <input id="x" type="checkbox" name="social" value="x">
+                            <input
+                                id="x"
+                                type="checkbox"
+                                name="social"
+                                value="x">
                             <label for="x">X</label>
                         </div>
-                            
+
+
+                        <div class="estilo-musical">
+                            <label for="musicStyle">
+                                Estilo musical:
+                            </label>
+
+                            <input
+                                list="styleTypes"
+                                id="musicStyle"
+                                type="text"
+                                name="userMusicStyle">
+
+                            <datalist id="styleTypes">
+                                <option value="Rock"></option>
+                                <option value="Pop"></option>
+                                <option value="Samba"></option>
+                                <option value="Sertanejo"></option>
+                            </datalist>
+
+                        </div>
+
+                    <div class="cor-favorita">
+                        <label for="favoriteColor">Cor favorita:</label>
+                        <input 
+                            type="color" 
+                            name="userFavoriteColor" 
+                            id="favoriteColor">
                     </div>
-                    
-                </fieldset>
+                     
+                </div>
 
-            </form>
+            </fieldset>
 
-        </section>
-        
+                <div class="button-enviar">
+                    <button type="submit">Enviar</button>
+                </div>
+            
+        </form>
+
+    </section>
+
 </body>
+
 </html>
