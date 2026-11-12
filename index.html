@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -32,15 +32,17 @@
 
                 <div class="info-pessoal">
 
-                    <label for="name">Nome:</label>
+                    <label class="label" for="name">Nome</label>
                     <input
+                        class="input-texto"
                         id="name"
                         type="text"
                         name="userName"
                         required>
 
-                    <label for="age">Idade:</label>
+                    <label class="label" for="age">Idade</label>
                     <input
+                        class="input-texto"
                         id="age"
                         type="number"
                         name="userAge"
@@ -48,34 +50,50 @@
                         max="100"
                         required>
 
-                    <label for="birthdate">Data de nascimento:</label>
+                    <label class="label" for="birthdate">Data de nascimento</label>
                     <input
+                        class="input-texto"
                         id="birthdate"
                         type="date"
                         name="birthDate">
 
-                    <label for="email">E-mail:</label>
+                    <label class="label" for="email">E-mail</label>
                     <input
+                        class="input-texto"
                         id="email"
                         type="email"
                         name="email"
                         required>
 
-                    <label for="phonenumber">Telefone:</label>
-                    <input
+                    <label class="label" for="phonenumber">Telefone</label>
+                    <input  
+                        class="input-texto"
                         id="phonenumber"
                         type="tel"
                         name="userPhoneNumber"
                         pattern="[0-9]{11}"
                         placeholder="DDD + número">
+                    <p class="p">
+                        <strong>
+                            Preencha com 11 digitos no formato: DDD + número
+                        </strong>
+                    </p>
 
-                    <label for="userImage">Upload:</label>
-                    <input
-                        id="userImage"
-                        type="file"
-                        name="userImage"
-                        accept="image/*">
-
+                    <label class="label" for="userImage">Upload de foto</label>
+                    <div class="upload-container">  
+                        <input
+                            class="input-img"
+                            id="userImage"
+                            type="file"
+                            name="userImage"
+                            accept="image/*">
+                    </div>
+                    <p class="p">
+                        <strong>
+                            Escolha uma foto no formato PNG ou JPEG
+                        </strong>
+                    </p>
+                        
                 </div>
 
             </fieldset>
