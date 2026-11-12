@@ -14,14 +14,14 @@ h1 {
     font-size: 50px;
     font-family: 'Nunito', sans-serif;
 }
-
-/* Campos preenchidos corretamente ficam verdes */
-.input-texto:valid {
+ 
+.input-texto:valid,
+.caixa-select:valid  {
     border: 2px solid green;
 }
 
-/* Campos inválidos ficam vermelhos */
-.input-texto:invalid {
+.input-texto:invalid, 
+.caixa-select:invalid {
     border: 2px solid red;
 }
 
@@ -40,7 +40,9 @@ h1 {
 
     padding: 10px;
     margin: 0 auto;
+    margin-top: 30px;
 
+    border-radius: 10px;
     border-width: 3px;
     color: black;
     font-size: 20px;
@@ -59,8 +61,8 @@ h1 {
 
 .input-img {
     width: 100%;
-    height: 50px;
-    padding-top: 12px;
+    height: 40px;
+    padding-top: 8px;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
@@ -83,27 +85,59 @@ h1 {
     border: 2px solid black;
     border-radius: 5px;
     padding-left: 6px;
-
-
 }
     
-
 .p {
-
     padding-top: 2px;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
-    
 }
 
-
-
-.button-enviar {
+.generos {
     display: flex;
-    margin-left: 50%;
+    flex-direction : row;
+    align-items: center;
+    gap: 10px;
+    padding: 2px;
 }
 
+.label-generos {
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
 
+    text-align: left;
+
+}
+
+.generos-options {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.generos-label {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.caixa-select {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.estado-civil,
+.estados {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+}
 
 .info-pessoal,
 .perfil,
@@ -118,23 +152,22 @@ h1 {
     white-space: nowrap;
 }   
 
-.estado-civil,
-.generos,
-.estados,
+
 .redes-sociais,
 .estilo-musical,
 .opiniao-intero,
 .opnion-text,
 .confirmacoes-interno {
     display: flex;
-    align-items: row;
+    align-items: stretch;
     gap: 10px;
     padding: 2px;
+    white-space: nowrap;
 }
 
-
-
-
-
+.button-enviar {
+    display: flex;
+    margin-left: 50%;
+}
 
 

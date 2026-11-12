@@ -32,7 +32,7 @@
 
                 <div class="info-pessoal">
 
-                    <label class="label" for="name">Nome</label>
+                    <label class="label" for="name">Nome:</label>
                     <input
                         class="input-texto"
                         id="name"
@@ -40,7 +40,7 @@
                         name="userName"
                         required>
 
-                    <label class="label" for="age">Idade</label>
+                    <label class="label" for="age">Idade:</label>
                     <input
                         class="input-texto"
                         id="age"
@@ -50,14 +50,14 @@
                         max="100"
                         required>
 
-                    <label class="label" for="birthdate">Data de nascimento</label>
+                    <label class="label" for="birthdate">Data de nascimento:</label>
                     <input
                         class="input-texto"
                         id="birthdate"
                         type="date"
                         name="birthDate">
 
-                    <label class="label" for="email">E-mail</label>
+                    <label class="label" for="email">E-mail:</label>
                     <input
                         class="input-texto"
                         id="email"
@@ -65,7 +65,7 @@
                         name="email"
                         required>
 
-                    <label class="label" for="phonenumber">Telefone</label>
+                    <label class="label" for="phonenumber">Telefone:</label>
                     <input  
                         class="input-texto"
                         id="phonenumber"
@@ -111,41 +111,49 @@
 
                     <div class="generos">
 
-                        <input
-                            id="male"
-                            type="radio"
-                            name="userGender"
-                            value="Masculino">
-                        <label for="male">Masculino</label>
-
-                        <input
-                            id="female"
-                            type="radio"
-                            name="userGender"
-                            value="Feminino">
-                        <label for="female">Feminino</label>
-
-                        <input
-                            id="other"
-                            type="radio"
-                            name="userGender"
-                            value="Outro">
-
-                        <label for="other">Outro</label>
+                        <div class="generos-options">
+                            <input
+                                id="male"
+                                type="radio"
+                                name="userGender"
+                                value="Masculino">
+                            <label class="label-generos" for="male">Masculino</label>
+                        </div>
+                                                
+                        <div class="generos-options">
+                            <input
+                                id="female"
+                                type="radio"
+                                name="userGender"
+                                value="Feminino">
+                            <label class="label-generos" for="female">Feminino</label>
+                        </div>
+     
+                        <div class="generos-options">
+                            <input
+                                id="other"
+                                type="radio"
+                                name="userGender"
+                                value="Outro">
+                            <label class="label-generos" for="other">Outro</label>
+                        </div>
+                            
 
                     </div>
 
                     <div class="estado-civil">
 
-                        <label for="maritalStatus">
+                        <label class="label" for="maritalStatus">
                             Estado civil:
                         </label>
 
                         <select
+                            class="caixa-select"
                             id="maritalStatus"
-                            name="maritalStatus">
+                            name="maritalStatus"
+                            required>
 
-                            <option value="notInformed">
+                            <option value="">
                                 Selecione...
                             </option>
 
@@ -161,14 +169,20 @@
 
                     <div class="estados">
 
-                        <label for="userStates">Estado:</label>
+                        <label class="label" for="userStates">
+                            Estado:
+                        </label>
 
                         <select
+                            class="caixa-select"
                             id="userStates"
                             name="userStates"
                             required>
 
-                            <option value="">Selecione...</option>
+                            <option value="">
+                                Selecione...
+                            </option>
+
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -202,9 +216,12 @@
                     </div>
 
                     <div class="cidade">
-                        <label for="city">Cidade:</label>
+                        <label class="label" for="city">
+                            Cidade:
+                        </label>
 
                         <input
+                            class="input-texto"
                             id="city"
                             type="text"
                             name="userCity"
