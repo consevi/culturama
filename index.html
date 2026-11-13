@@ -232,10 +232,11 @@
 
                 <div class="habitos">
 
-                    <p>Redes sociais:</p>
+                    <label class="label" for="">Redes sociais:</label>
 
                     <div class="redes-sociais">
                         <input
+                            class="input-redes-sociais"
                             id="instagram"
                             type="checkbox"
                             name="social"
@@ -245,6 +246,7 @@
 
                     <div class="redes-sociais">
                         <input
+                            class="input-redes-sociais" 
                             id="facebook"
                             type="checkbox"
                             name="social"
@@ -254,6 +256,7 @@
 
                     <div class="redes-sociais">
                         <input
+                            class="input-redes-sociais"
                             id="linkedin"
                             type="checkbox"
                             name="social"
@@ -263,6 +266,7 @@
 
                     <div class="redes-sociais">
                         <input
+                            class="input-redes-sociais"
                             id="x"
                             type="checkbox"
                             name="social"
@@ -271,10 +275,11 @@
                     </div>
 
                     <div class="estilo-musical">
-
-                        <label for="musicStyle">Estilo musical:</label>
+                    
+                        <label class="label" for="musicStyle">Estilo musical:</label>
 
                         <input
+                            class="input-texto"
                             list="styleTypes"
                             id="musicStyle"
                             type="text"
@@ -291,9 +296,10 @@
 
                     <div class="cor-favorita">
 
-                        <label for="favoriteColor">Cor favorita:</label>
+                        <label class="label" for="favoriteColor">Cor favorita</label>
 
                         <input
+                            class="input-cor"
                             type="color"
                             name="userFavoriteColor"
                             id="favoriteColor">
@@ -373,20 +379,20 @@
 
                     <div class="confirmacoes-interno">
                         <input
-                            id="aceptParticipation"
+                            id="userLgpdTerm"
                             type="checkbox"
                             name="userAceptParticipation"
                             value="accepted"
                             required>
-                        <label for="aceptParticipation">Aceito participar da pesquisa</label>
+                        <label for="userLgpdTerm">Aceito participar da pesquisa</label>
                     </div>
 
                     <div class="confirmacoes-interno">
                         <input
-                            id="resulForEmail"
+                            id="getResult"
                             type="checkbox"
                             name="userResulForEmail">
-                        <label for="resulForEmail">Receber resultado por email</label>
+                        <label for="getResult">Receber resultado por email</label>
                     </div>
 
                 </div>
@@ -396,6 +402,10 @@
 
             <div class="button-enviar">
                 <button type="submit">Enviar</button>
+            </div>
+
+            <div class="button-limpar">
+                <button type="reset">Limpar</button>
             </div>
 
         </form>

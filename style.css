@@ -21,7 +21,6 @@ h1 {
     border: 2px solid green;
 }
 
-/* Campos preenchidos corretamente ficam verdes */
 .input-texto:invalid,
 .caixa-select:invalid {
     border: 2px solid red;
@@ -77,6 +76,7 @@ h1 {
     text-align: left;
     padding-top: 15px;
 }
+
 
 .upload-container {
     display: flex;
@@ -140,7 +140,12 @@ h1 {
     white-space: nowrap;
 }
 
+
+
+
+
 .info-pessoal,
+.estilo-musical,
 .perfil,
 .cidade,
 .habitos,
@@ -153,8 +158,39 @@ h1 {
     white-space: nowrap;
 }
 
+
+
+
+
+
+
+
+
+
+
+.input-redes-sociais {
+    width: 20px;
+    height:  auto;
+}
+
+.cor-favorita {
+    padding-top: 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-cor {
+    width: 5%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px ;
+    align-items: center;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
 .redes-sociais,
-.estilo-musical,
 .opiniao-intero,
 .opnion-text,
 .confirmacoes-interno {
