@@ -276,14 +276,17 @@
 
                     <div class="estilo-musical">
                     
-                        <label class="label" for="musicStyle">Estilo musical:</label>
+                        <label class="label" for="musicStyle">
+                            Estilo musical:
+                        </label>
 
                         <input
                             class="input-texto"
                             list="styleTypes"
                             id="musicStyle"
                             type="text"
-                            name="userMusicStyle">
+                            name="userMusicStyle"
+                            required>
 
                         <datalist id="styleTypes">
                             <option value="Rock"></option>
@@ -296,7 +299,9 @@
 
                     <div class="cor-favorita">
 
-                        <label class="label" for="favoriteColor">Cor favorita</label>
+                        <label class="label" for="favoriteColor">
+                            Cor favorita
+                        </label>
 
                         <input
                             class="input-cor"
@@ -319,9 +324,11 @@
 
                 <div class="opiniao">
 
-                    <p>O que você acha da qualidade do nosso serviço?</p>
+                    <label class="label" for="">
+                        O que você acha da qualidade do nosso serviço?
+                    </label>
 
-                    <div class="opiniao-intero">
+                    <div class="opiniao-interno">
                         <input
                             id="great"
                             type="radio"
@@ -329,7 +336,7 @@
                         <label for="great">Ótimo</label>
                     </div>
 
-                    <div class="opiniao-intero">
+                    <div class="opiniao-interno">
                         <input
                             id="good"
                             type="radio"
@@ -337,7 +344,7 @@
                         <label for="good">Bom</label>
                     </div>
 
-                    <div class="opiniao-intero">
+                    <div class="opiniao-interno">
                         <input
                             id="regular"
                             type="radio"
@@ -345,19 +352,20 @@
                         <label for="regular">Regular</label>
                     </div>
 
-                    <div class="opiniao-intero">
+                    <div class="opiniao-interno">
                         <input
                             id="bad"
                             type="radio"
                             name="userOpinion">
-                        <label for="bad">Bad</label>
+                        <label for="bad">Ruim</label>
                     </div>
 
                     <div class="opnion-text">
 
-                        <label for="opinionText">Escreva sua opinião:</label>
+                        <label class="label" for="opinionText">Escreva sua opinião:</label>
 
                         <textarea
+                            class="texto-area"
                             id="opinionText"
                             name="userOpinonText"
                             placeholder="Digite aqui..."></textarea>
@@ -379,6 +387,7 @@
 
                     <div class="confirmacoes-interno">
                         <input
+                            class="input-confirmacao"
                             id="userLgpdTerm"
                             type="checkbox"
                             name="userAceptParticipation"
@@ -389,6 +398,7 @@
 
                     <div class="confirmacoes-interno">
                         <input
+                            class="input-confirmacao"
                             id="getResult"
                             type="checkbox"
                             name="userResulForEmail">
@@ -400,13 +410,16 @@
             </fieldset>
 
 
-            <div class="button-enviar">
-                <button type="submit">Enviar</button>
-            </div>
+            <div class="botoes">
+                <div class="enviar">
+                    <button class="button-enviar" type="submit">Enviar</button>
+                </div>
 
-            <div class="button-limpar">
-                <button type="reset">Limpar</button>
+                <div class="limpar">
+                    <button class="button-limpar" type="reset">Limpar</button>
+                </div>
             </div>
+               
 
         </form>
 
