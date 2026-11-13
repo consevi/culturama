@@ -73,6 +73,7 @@ h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 
+    margin-bottom: 4px;
     text-align: left;
     padding-top: 15px;
 }
@@ -104,6 +105,11 @@ h1 {
     padding: 2px;
 }
 
+.generos-options input[type="radio"] {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
 .label-generos {
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -114,7 +120,7 @@ h1 {
 .generos-options {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 5px;
 }
 
 .generos-label {
@@ -140,35 +146,8 @@ h1 {
     white-space: nowrap;
 }
 
-
-
-
-
-.info-pessoal,
-.estilo-musical,
-.perfil,
-.cidade,
-.habitos,
-.opiniao,
-.cofirmacoes {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    width: 100%;
-    white-space: nowrap;
-}
-
-
-
-
-
-
-
-
-
-
-
-.input-redes-sociais {
+.input-redes-sociais,
+.input-confirmacao {
     width: 20px;
     height:  auto;
 }
@@ -190,9 +169,43 @@ h1 {
     font-size: 16px;
 }
 
+.opiniao-interno input[type="radio"] {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.texto-area {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    padding-left: 4px;
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+.confirmacoes {
+    margin-right: 70%;
+}
+
+.info-pessoal,
+.estilo-musical,
+.perfil,
+.cidade,
+.habitos,
+.opiniao,
+.cofirmacoes,
+.opnion-text {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+}
+
 .redes-sociais,
-.opiniao-intero,
-.opnion-text,
+.opiniao-interno,
+.confirmacoes-interno,
 .confirmacoes-interno {
     display: flex;
     align-items: stretch;
@@ -201,7 +214,22 @@ h1 {
     white-space: nowrap;
 }
 
-.button-enviar {
+.botoes {
     display: flex;
-    margin-left: 50%;
+    flex-direction: row;
+    padding-top: 10px;
+    gap: 20px;
+
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 43%;
+}
+
+
+.button-enviar,
+.button-limpar {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
 }
