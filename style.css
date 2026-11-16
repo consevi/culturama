@@ -243,3 +243,20 @@ h1 {
     height: 40px;
     border-radius: 5px;
 }
+
+.pagina-sucesso {
+    margin: 0;
+}
+
+.sucesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.img-sucesso {
+    width: 100px;
+    height: auto;
+}
