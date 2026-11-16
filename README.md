@@ -1,20 +1,19 @@
-📋 O CultuRama é uma página de pesquisa online que permite ao usuário preencher um formulário com informações pessoais, preferências e opiniões.
+📋 CultuRama is an online survey page that allows users to fill out a form with personal information, preferences, and opinions.
 
-Após o envio, o usuário é direcionado para uma página de confirmação de sucesso.
+After submitting the form, users are redirected to a success confirmation page.
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 
-## 📂 Estrutura do projeto
+## 📂 Project Structure
 
-- `index.html` — Página principal com o formulário.
-- `sucesso.html` — Página de confirmação.
-- `style.css` — Estilização das páginas.
-- `assets/` — Imagens e ícones utilizados.
+- `index.html` — Main page containing the survey form.
+- `sucesso.html` — Success confirmation page.
+- `style.css` — Stylesheet for the pages.
+- `assets/` — Images and icons used in the project.
 
+## 📚 Purpose
 
-## 📚 Objetivo
-
-Praticar conceitos fundamentais de HTML semântico, formulários, organização de arquivos e estilização com CSS.
+To practice fundamental concepts of semantic HTML, forms, file organization, and CSS styling.
