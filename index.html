@@ -75,13 +75,11 @@
                         type="tel"
                         name="userPhoneNumber"
                         pattern="[0-9]{11}"
-                        placeholder="DDD + número">
-
-                    <p class="p">
-                        <strong>
-                            Preencha com 11 digitos no formato: DDD + número
-                        </strong>
-                    </p>
+                        placeholder="DDD + número"
+                        aria-describedby="phoneHelp">
+                    <small id="phoneHelp">
+                        <strong>Preencha com 11 digitos no formato: DDD + número</strong> 
+                    </small>
 
                     <label class="label" for="userImage">Upload de foto</label>
 
